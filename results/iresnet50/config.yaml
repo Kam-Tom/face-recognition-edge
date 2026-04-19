@@ -1,0 +1,47 @@
+data:
+  dataset: ms1mv3
+  num_classes: 10000
+  num_images: null
+  root: data/ms1mv3
+  subset: true
+  subset_ids: 10000
+eval:
+  benchmarks:
+  - lfw
+  - cplfw
+  - calfw
+  - agedb_30
+  - cfp_fp
+  eval_root: data/eval
+loss:
+  margin: 0.5
+  name: arcface
+  scale: 64
+model:
+  embedding_dim: 512
+  input_size: 112
+  name: iresnet50
+save:
+  log_interval: 100
+  output_dir: results/
+  save_best: true
+  save_last: true
+train:
+  batch_size: 512
+  epochs: 25
+  mixed_precision: true
+  num_workers: 8
+  optimizer:
+    lr: 0.1
+    momentum: 0.9
+    type: sgd
+    weight_decay: 0.0005
+  scheduler:
+    gamma: 0.1
+    milestones:
+    - 10
+    - 16
+    - 22
+    type: multistep
+    warmup_epochs: 2
+  seed: 42

@@ -1,0 +1,6 @@
+# ResNet-50
+
+_base_: base.yaml
+
+model:
+  name: resnet50

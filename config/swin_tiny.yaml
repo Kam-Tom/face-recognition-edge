@@ -1,0 +1,16 @@
+# Swin-Tiny (Liu et al. 2021)
+
+_base_: base.yaml
+
+model:
+  name: swin_tiny
+
+train:
+  optimizer:
+    type: adamw
+    lr: 1.0e-3
+    weight_decay: 0.05
+
+  scheduler:
+    type: cosine
+    warmup_epochs: 2

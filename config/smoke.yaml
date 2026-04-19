@@ -1,0 +1,19 @@
+_base_: base.yaml
+
+model:
+  name: mobilefacenet
+
+train:
+  seed: 42
+  epochs: 1
+  batch_size: 32
+  num_workers: 0
+  mixed_precision: true
+
+data:
+  subset: true
+  subset_ids: 250
+
+save:
+  output_dir: results_smoke/
+  log_interval: 10

@@ -1,0 +1,16 @@
+# FaceLiVTv2-S (Setiawan et al. 2026)
+
+_base_: base.yaml
+
+model:
+  name: facelivtv2_s
+
+train:
+  optimizer:
+    type: adamw
+    lr: 1.0e-3
+    weight_decay: 0.05
+
+  scheduler:
+    type: cosine
+    warmup_epochs: 2

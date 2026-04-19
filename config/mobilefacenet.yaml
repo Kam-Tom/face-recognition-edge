@@ -1,0 +1,6 @@
+# MobileFaceNet (Chen et al. 2018)
+
+_base_: base.yaml
+
+model:
+  name: mobilefacenet

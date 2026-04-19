@@ -1,0 +1,6 @@
+# GhostFaceNet (Alansari et al. 2023)
+
+_base_: base.yaml
+
+model:
+  name: ghostfacenet

@@ -1,0 +1,6 @@
+# IResNet-50 (InsightFace IR50)
+
+_base_: base.yaml
+
+model:
+  name: iresnet50

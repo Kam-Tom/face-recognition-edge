@@ -1,0 +1,6 @@
+# Subset: 10k identities from MS1MV3, ~550k images
+
+data:
+  num_classes: 10000
+  subset: true
+  subset_ids: 10000

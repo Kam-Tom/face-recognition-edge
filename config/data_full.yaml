@@ -1,0 +1,5 @@
+# Full MS1MV3: 93,431 identities, ~5.18M images
+
+data:
+  num_classes: 93431
+  subset: false

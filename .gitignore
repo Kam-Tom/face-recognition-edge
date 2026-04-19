@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Data files (large, not code)
+data/ms1mv3/
+data/eval/
+data/eval_extra/
+*.rec
+*.idx
+*.pkl
+
+# Trained weights
+weights/
+onnx/
+*.pt
+*.pth
+*.onnx
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Env
+.env
+venv/
+.venv/
+
+# Local notes
+VAST_SETUP.md
+
+#ogs
+logs/
